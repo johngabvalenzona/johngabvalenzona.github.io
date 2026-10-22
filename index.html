@@ -175,117 +175,164 @@
     </section>
 
 
+    ```html
     <section class="portfolio-section" id="projects">
+
+        <!-- Major Projects -->
         <div class="container">
             <p class="section-eyebrow">Some major</p>
             <h2 class="section-title">Projects</h2>
 
             <div class="row g-4">
-                <div id="carouselExampleDark" class="carousel slide">
+                <div class="col-12">
+                    <div id="carouselExampleDark" class="carousel slide">
 
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
 
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
 
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
 
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="assets/Miku Ventures pic.jpg" class="d-block w-100" alt="Miku Ventures">
+
+                                <div class="carousel-caption">
+                                    <h5>Miku Ventures</h5>
+                                    <p>Game development project using Pygame.</p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <video class="d-block w-100" autoplay muted loop playsinline>
+                                    <source src="assets/1.mp4" type="video/mp4">
+                                </video>
+
+                                <div class="carousel-caption">
+                                    <h5>Miku Ventures Preview</h5>
+                                    <p>Game development project using Pygame.</p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <video class="d-block w-100" autoplay muted loop playsinline>
+                                    <source src="assets/ITC DEMO VID.mp4" type="video/mp4">
+                                </video>
+
+                                <div class="carousel-caption">
+                                    <h5>Death Certificate Application Form</h5>
+                                    <p>
+                                        Developed a GUI Form Generator with Python Tkinter,
+                                        incorporating MessageBox alerts for enhanced user
+                                        interaction and data validation.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 4 -->
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <video class="d-block w-100" autoplay muted loop playsinline>
+                                    <source src="assets/Valenzona, John Gabriel.mp4" type="video/mp4">
+                                </video>
+
+                                <div class="carousel-caption">
+                                    <h5>C# Student Enrollment Application</h5>
+                                    <p>
+                                        Developed in C#, this Student Enrollment System allows
+                                        users to manage student information, course enrollment
+                                        details, and emergency records through an intuitive
+                                        graphical interface.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Carousel Controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
                     </div>
-
-                    <!-- Slides -->
-                    <div class="carousel-inner">
-
-                        <!-- Slide 1 -->
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="assets/Miku Ventures pic.jpg" class="d-block w-100" alt="Miku Ventures">
-
-                            <div class="carousel-caption">
-                                <h5>Miku Ventures</h5>
-                                <p>Game development project using Pygame.</p>
-                            </div>
-                        </div>
-
-                        <!-- Slide 2 -->
-                        <div class="carousel-item" data-bs-interval="5000">
-                            <video class="d-block w-100" autoplay muted loop playsinline>
-                                <source src="assets/1.mp4" type="video/mp4">
-                            </video>
-
-                            <div class="carousel-caption">
-                                <h5>Miku Ventures Preview</h5>
-                                <p>Game development project using Pygame.</p>
-                            </div>
-                        </div>
-
-                        <!-- Slide 3 -->
-                        <div class="carousel-item" data-bs-interval="5000">
-                            <video class="d-block w-100" autoplay muted loop playsinline>
-                                <source src="assets/ITC DEMO VID.mp4" type="video/mp4">
-                            </video>
-
-                            <div class="carousel-caption">
-                                <h5>Death Certificate Application Form</h5>
-                                <p>Developed a GUI Form Generator with Python Tkinter, incorporating MessageBox alerts
-                                    for enhanced user interaction and data validation.</p>
-                            </div>
-                        </div>
-
-                        <!-- Slide 4 -->
-                        <div class="carousel-item" data-bs-interval="5000">
-                            <video class="d-block w-100" autoplay muted loop playsinline>
-                                <source src="assets/Valenzona, John Gabriel.mp4" type="video/mp4">
-                            </video>
-
-                            <div class="carousel-caption">
-                                <h5>C# Student Enrollment Application</h5>
-                                <p>Developed in C#, this Student Enrollment System allows users to manage student
-                                    information, course enrollment details, and emergency records through an intuitive
-                                    graphical interface.</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <!-- Controls -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
                 </div>
             </div>
         </div>
-        <br><br>
-        <div class="container">
-            <p class="section-eyebrow">Projects in</p>
-            <h2 class="section-title">Website Development</h2>
-            <div class="card hobby-card h-100 position-relative"> 
-                
-                <a href="https://johngabvalenzona.github.io/webdev" class="stretched-link"></a>
-                
-                <img src="assets/BentoGrid.png" class="card-img-top" alt="Bento Grid">
 
-                <div class="card-body">
-                    <h5 class="card-title">Travel Moodboard</h5>
-                    <p class="card-text">
-                        In this project, we are tasked to showcase pictures following the Bento Grids design.
-                    </p>
+        <!-- Website Development Projects -->
+        <div class="container mt-5">
+
+            <p class="section-eyebrow">Projects in</p>
+            <h2 class="section-title mb-4">Website Development</h2>
+
+            <div class="row g-4">
+
+                <!-- Travel Moodboard -->
+                <div class="col-12 col-md-6">
+                    <div class="card hobby-card h-100 position-relative">
+
+                        <img src="assets/BentoGrid.png" class="card-img-top" alt="Travel Moodboard">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Travel Moodboard</h5>
+                            <p class="card-text">
+                                In this project, we are tasked to showcase pictures
+                                following the Bento Grids design.
+                            </p>
+                        </div>
+
+                        <a href="https://johngabvalenzona.github.io/webdev/A01" class="stretched-link"
+                            aria-label="View Travel Moodboard project"></a>
+
+                    </div>
                 </div>
+
+                <!-- Savoré -->
+                <div class="col-12 col-md-6">
+                    <div class="card hobby-card h-100 position-relative">
+
+                        <img src="assets/Savore.png" class="card-img-top" alt="Savoré Website">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Savoré</h5>
+                            <p class="card-text">
+                                Here, we are to practice what we've learned in
+                                our lesson in JavaScript.
+                            </p>
+                        </div>
+
+                        <a href="https://johngabvalenzona.github.io/webdev/A02" class="stretched-link"
+                            aria-label="View Savoré project"></a>
+
+                    </div>
+                </div>
+
             </div>
+        </div>
 
     </section>
+    ```
 
 
     <section class="portfolio-section" id="academics">
